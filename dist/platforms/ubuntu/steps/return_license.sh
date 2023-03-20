@@ -13,7 +13,7 @@ if [[ -n "$UNITY_SERIAL" ]]; then
   unity-editor \
     -logFile /dev/stdout \
     -quit \
-    -returnlicense
+    -returnlicense || true
 fi
 
 # Return to previous working directory
